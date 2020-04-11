@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Manager</title>
+  <script language="JavaScript">
+function setVisibility(id) {
+  if (id=="sub3") {document.getElementById("sub4").style.display = "none";
+  document.getElementById("sub5").style.display = "none";document.getElementById("sub3").style.display = "inline";}
+  if (id=="sub4") {document.getElementById("sub3").style.display = "none";
+  document.getElementById("sub5").style.display = "none";document.getElementById("sub4").style.display = "inline";}
+  if (id=="sub5") {document.getElementById("sub4").style.display = "none";
+  document.getElementById("sub3").style.display = "none";document.getElementById("sub5").style.display = "inline";}
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 1000%;
+    display: block;
+    margin-bottom: 100px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#sub3 {
+position: absolute;
+left: 0px;
+top: 100px;
+background-color: white;
+width: 1200px;
+border:500px;
+padding: 110px;
+color: black;
+/*border: #0000cc 2px dashed;*/
+display: none;}
+#sub4 {
+/*position: absolute;*/
+left: 0px;
+top: 160px;
+background-color: #f1f1f1;
+width: 500px;
+/*padding: 50px;*/
+color: black;
+/*border: #0000cc 2px dashed;*/
+display: none;}
+#sub5 {
+/*position: absolute;*/
+left: 50px;
+top: 200px;
+border-radius: 10px;
+background-color: #f1f1f1;
+width: 400px;
+/*padding: 10px;*/
+color: black;
+/*border: #0000cc 2px dashed;*/
+display: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 30px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -30px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 500%;
+    display: block;
+    margin-bottom: 200px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 125px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body><div class="container">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h4>Manager&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Search" name="search">
+  <button type="submit"><i class="fa fa-search"><span class="glyphicon glyphicon-search"></span></i></button>
+<p align="right">
+<a class="btn btn-primary" href="#" role="button">LOGOUT</a>
+<a href="#">
+          <span class="glyphicon glyphicon-user"></span>
+        </a></p>
+</h4><br>
+<div class="btn-group btn-group-justified">
+
+  <input type="button" name="Table view"value='TABLEVIEW' onclick="setVisibility('sub3');";>
+  <input type="button" name="Table view"value='KOT VIEW' onclick="setVisibility('sub4');";>
+  <input type="button" name="Table view"value='COIN STATUS' onclick="setVisibility('sub5');";>
+  <div id="sub3">
+<div class="row">
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECTION 1</h4>
+  <div class="column">
+    <div class="card">
+      <h3>Card1</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Card2</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Card3</h3>
+    </div>
+  </div>
+</div><br>
+<div class="row">
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECTION 2</h4>
+  <div class="column">
+    <div class="card">
+      <h3>Card1</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Card2</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Card3</h3>
+    </div>
+  </div>
+</div><br>
+<div class="row">
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECTION 3</h4>
+  <div class="column">
+    <div class="card">
+      <h3>Card1</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Card2</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Card3</h3>
+    </div>
+  </div>
+    </div></div>
+</div>
+</div>
+<div id="sub4"><div class="container"><br><br>
+<div class="btn-group btn-group-justified">
+  <a href="#" class="btn btn-default active">KOT VIEW</a>
+  <a href="#" class="btn btn-default">IN PROCESS</a>
+  <a href="#" class="btn btn-default">COMPLETED</a>
+  <a href="#" class="btn btn-default">CANCELLED</a>
+</div>
+  <br>
+  <h5 align="right"> <input type="text" placeholder="Search" name="search">
+  <button type="submit"><i class="fa fa-search"><span class="glyphicon glyphicon-search"></span></i></button><br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Card 1</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 2</h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 3</h3>
+    </div>
+  </div>
+    </div>
+</div></div>
+<div id="sub5"><div class="container"><br>
+<div class="btn-group btn-group-justified">
+  <a href="#" class="btn btn-default">AVAILABLE COINS</a>
+  <a href="#" class="btn btn-default">DEPOSITED COINS</a>
+</div><br>
+<h5 align="right">
+<input type="date" name="date"></h5>
+<h4>
+  10,000 * <input type="text" name="value"><br><br>
+  5,000  * &nbsp;&nbsp;<input type="text" name="value"><br><br>
+  2,000  * &nbsp;&nbsp;<input type="text" name="value"><br><br>
+  1,000  * &nbsp;&nbsp;<input type="text" name="value"><br><br>
+  500    * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="value"><br><br>
+  100    * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="value"><br><br>
+  50     * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="value"><br><br><hr>
+  <button>Total</button>&nbsp;&nbsp;&nbsp; <input type="text" name="value">
+</h4></div>
+</body>
+</html>
